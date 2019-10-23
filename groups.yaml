@@ -1,0 +1,24 @@
+---
+#cisco:
+#  username: randy
+#  password: test
+#  platform: cisco_ios
+
+london:
+    data:
+        domain: r1.netdevops.com
+        asn: 1
+    platform: cisco_ios
+
+us:
+    data:
+        domain: r2.netdevops.com
+        asn: 1
+    platform: cisco_ios
+
+
+bma:
+    groups:
+        - london
+        - us
+
