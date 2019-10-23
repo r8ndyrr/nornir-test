@@ -1,0 +1,4 @@
+# ignore temp and log files
+
+*.log
+*.swp
