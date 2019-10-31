@@ -13,15 +13,18 @@ def load_data(task):
 
     task.host["asn"] = data.result["asn"]
     task.host["networks"] = data.result["networks"]
-    r = task.run(task=template_file, template="router1.j2", path="")
+#   task.host["template_config"] = task.run(task=template_file, template="router.j2", path="")
+    r = task.run(task=template_file, template="router.j2", path="")
     task.host["template_config"] = r.result
     task.run(task=napalm_configure, configuration=task.host["template_config"])
 
 
 nr = InitNornir()
-routers = nr.filter(nornir_nos="cisco_ios")
+routers = nr.filter(platform="ios")
+#r = routers.run(task=load_data)
 
 london = routers.filter(site="london")
 r = london.run(load_data)
+#r = nr.run(task=load_data)
 print_result(r)
 
