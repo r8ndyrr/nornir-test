@@ -1,5 +1,6 @@
 router bgp {{ host.asn }}
  bgp router-id {{ host.data.interfaces.loopback0 }}
+ neighbor {{ host.bgp_neighbor }} remote-as {{ host.neighbor_asn }}
  address-family ipv4 unicast
 {% for n in host.networks %}
   network {{ n.net }} mask {{ n.mask }}

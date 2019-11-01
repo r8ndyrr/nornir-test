@@ -4,6 +4,8 @@ lon-router1:
         site: london
         interfaces:
             loopback0: 1.1.1.1
+        neighbor_asn: 555
+        bgp_neighbor: 192.168.122.11
     hostname: 192.168.122.10
     username: randy
     password: test
@@ -13,6 +15,10 @@ lon-router1:
 us-router2:
     data:
         site: brussels
+        interfaces:
+            loopback0: 2.2.2.2
+        neighbor_asn: 666
+        bgp_neighbor: 192.168.122.10
     hostname: 192.168.122.11
     username: randy
     password: test

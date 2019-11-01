@@ -23,8 +23,8 @@ nr = InitNornir()
 routers = nr.filter(platform="ios")
 #r = routers.run(task=load_data)
 
-london = routers.filter(site="london")
-r = london.run(load_data)
-#r = nr.run(task=load_data)
+#london = routers.filter(site="london")
+#r = london.run(load_data)
+r = nr.run(task=load_data)
 print_result(r)
 
