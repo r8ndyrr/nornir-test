@@ -5,4 +5,6 @@ router bgp {{ host.asn }}
 {% for n in host.networks %}
   network {{ n.net }} mask {{ n.mask }}
 {% endfor %}
+ do wr
+ end
 
