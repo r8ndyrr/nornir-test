@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 *.log
 *.txt
+=======
+# ignore temp and log files
+
+*.log
+>>>>>>> devel
 *.swp
