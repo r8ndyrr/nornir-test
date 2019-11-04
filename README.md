@@ -2,18 +2,20 @@
 Hi! I've just started playing around with the **Nornir automation framework** and 
 decided to create this repo. It took me a while to figure out what I needed to get up 
 and running, so i'm putting everything here in case you're stuck like I was :).
+
 ## My Environment
 To get things started, I'll explain my Lab environment so that you can see and compare 
 with what you're using in the event that some stuff don't work.
+
 ## Server
-- I'm using GNS3 server v2.1.21 hosted on google cloud to store my Cisco images. -
-		- **I'm also using an Ubuntu Docker docker container (pulled from here 
---> ubuntu:latest)
-		- Description: Ubuntu 18.04.3 LTS
-		- Release: 18.04
-		- Codename: bionic** -
-		- GNS3 Nat Cloud for Internet access via DHCP -
-		- A couple cisco 7200 routers 
+- I'm using GNS3 server v2.1.21 hosted on google cloud to store my Cisco images. 
+  - **I'm also using an Ubuntu Docker docker container (pulled from here --> ubuntu:latest)
+- Description: Ubuntu 18.04.3 LTS
+- Release: 18.04
+- Codename: bionic** -
+- GNS3 Nat Cloud for Internet access via DHCP -
+- A couple cisco 7200 routers 
+
 Docker container needs to be updated and the following needs to be installed: 
 - apt update 
 - apt full-upgrade -y 
