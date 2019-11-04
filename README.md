@@ -13,16 +13,26 @@ with what you're using in the event that some stuff don't work.
 		- Release: 18.04
 		- Codename: bionic** -
 		- GNS3 Nat Cloud for Internet access via DHCP -
-		- A couple cisco 7200 routers Docker container needs to be updated and 
-the following needs to be installed: - apt update - apt full-upgrade -y - apt-get 
-install software-properties-common -y - add-apt-repository ppa:deadsnakes/ppa - 
-apt-get install python-pip -y - apt-get install python3-pip -y - pip3 install nornir - 
-apt-get install nano -y - apt-get install inetutils-ping -y - apt-get install 
-iputils-ping -y - apt-get install traceroute
+		- A couple cisco 7200 routers 
+Docker container needs to be updated and the following needs to be installed: 
+- apt update 
+- apt full-upgrade -y 
+- apt-get install software-properties-common -y 
+- add-apt-repository ppa:deadsnakes/ppa 
+- apt-get install python-pip -y 
+- apt-get install python3-pip -y 
+- pip3 install nornir 
+- apt-get install nano -y 
+- apt-get install inetutils-ping -y 
+- apt-get install iputils-ping -y 
+- apt-get install traceroute
+
 #### Change python3 and pip3 to be default by editing .bashrc file
 - nano ~/.bashrc
+
 #### Add the following lines at the top:
 alias python=python3 alias pip=pip3
+
 #### Save file, close and then run the command below:
 - source ~/.bashrc You can now test your application by running the python command 
 line as per below: -
@@ -33,8 +43,10 @@ line as per below: -
 information.
 			>>>
 Python 3 is now default.
+
 ## Install Git
 - apt-get install git -y Clone directory git clone 
 https://github.com/r8ndyrr/nornir-test.git
+
 ## Client
 - I'm using GNS3 v2.1.21 for my dev and config work.
