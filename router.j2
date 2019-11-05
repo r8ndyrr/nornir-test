@@ -1,3 +1,16 @@
+interface GigabitEthernet 1/0
+ ip address {{ host.interfaces.Gig1 }}
+ no shut
+exit
+interface GigabitEthernet 2/0
+ ip address {{ host.interfaces.Gig2 }}
+ no shut
+do wr
+end
+
+# interface GigabitEthernet1/0
+# interface GigabitEthernet2/0
+
 router bgp {{ host.asn }}
  bgp router-id {{ host.data.interfaces.loopback0 }}
  neighbor {{ host.bgp_neighbor }} remote-as {{ host.neighbor_asn }}

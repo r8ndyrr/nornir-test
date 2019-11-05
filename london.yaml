@@ -7,3 +7,20 @@ networks:
     mask: 255.255.255.0
   - net: 30.30.1.0
     mask: 255.255.255.0
+
+
+interface:
+    Gig1:
+        net: 8.8.8.8 255.255.255.255
+    Gig2:
+        net: 9.9.9.9 255.255.255.255
+
+
+#interface:
+#  - GigabitEthernet0/0:
+#  net: 7.7.7.7 255.255.255.255
+#  - GigabitEthernet1/0:
+#        net: 8.8.8.8 255.255.255.255
+#  - GigabitEthernet2/0:
+#        net: 9.9.9.9 255.255.255.255
+
